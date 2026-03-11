@@ -1,0 +1,239 @@
+📊 开始评估模块: /Users/tfhnia/PythonProjects/modules/aws_to_alicloud/terraform-alicloud-ess-autoscaling
+{
+  "module_path": "/Users/tfhnia/PythonProjects/modules/aws_to_alicloud/terraform-alicloud-ess-autoscaling",
+  "valid": true,
+  "results": {
+    "structure": {
+      "valid": true,
+      "score": 100,
+      "issues": [],
+      "warnings": [
+        "文件 variables.tf（路径: aws_to_alicloud/terraform-alicloud-ess-autoscaling/variables.tf）行数 (340) 超过建议行数（建议: 300 行），建议考虑拆分文件"
+      ],
+      "details": {
+        "tflint": {
+          "enabled": true,
+          "executed": true,
+          "success": true,
+          "error_count": 0,
+          "warning_count": 0,
+          "score_deduction": 0,
+          "status": "passed"
+        },
+        "required_files": {
+          "total": 6,
+          "found": 6,
+          "missing": []
+        },
+        "required_dirs": {
+          "total": 1,
+          "found": 1
+        },
+        "recommended_dirs": {
+          "total": 1,
+          "found": 0
+        }
+      }
+    },
+    "variables": {
+      "valid": true,
+      "score": 100,
+      "issues": [],
+      "warnings": [
+        "变量 key_name 可能包含敏感信息但未标记为 sensitive",
+        "变量 password_inherit 可能包含敏感信息但未标记为 sensitive",
+        "变量数量 (47) 与资源数量 (6) 的比例 (7.83) 过大（超过 7.5），建议对相关变量进行聚合以减少变量数量"
+      ],
+      "details": {}
+    },
+    "outputs": {
+      "valid": true,
+      "score": 100,
+      "issues": [],
+      "warnings": [],
+      "details": {}
+    },
+    "documentation": {
+      "valid": true,
+      "score": 100,
+      "issues": [],
+      "warnings": [],
+      "details": {}
+    },
+    "versions": {
+      "valid": true,
+      "score": 100,
+      "issues": [],
+      "warnings": [],
+      "details": {}
+    },
+    "main_resources": {
+      "valid": true,
+      "score": 100,
+      "issues": [],
+      "warnings": [],
+      "details": {}
+    },
+    "examples": {
+      "valid": true,
+      "score": 70,
+      "issues": [],
+      "warnings": [
+        "示例 advanced plan 失败: \u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"instance_type\": conflicts with instance_types\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[0m  with module.ess_autoscaling.alicloud_ess_scaling_configuration.this[0],\n\u001b[31m│\u001b[0m \u001b[0m  on ../../main.tf line 40, in resource \"alicloud_ess_scaling_configuration\" \"this\":\n\u001b[31m│\u001b[0m \u001b[0m  40: resource \"alicloud_ess_scaling_configuration\" \"this\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m╵\u001b[0m\u001b[0m\n\u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"inst",
+        "示例 basic plan 失败: \u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"instance_types\": conflicts with instance_type\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[0m  with module.ess_autoscaling.alicloud_ess_scaling_configuration.this[0],\n\u001b[31m│\u001b[0m \u001b[0m  on ../../main.tf line 40, in resource \"alicloud_ess_scaling_configuration\" \"this\":\n\u001b[31m│\u001b[0m \u001b[0m  40: resource \"alicloud_ess_scaling_configuration\" \"this\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m╵\u001b[0m\u001b[0m\n\u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"inst"
+      ],
+      "details": {
+        "examples_path": "aws_to_alicloud/terraform-alicloud-ess-autoscaling/examples",
+        "structure_score": 40,
+        "validate_score": 30,
+        "plan_score": 0
+      }
+    }
+  },
+  "summary": {
+    "total_categories": 7,
+    "overall_score": 97.0,
+    "rating": "优秀",
+    "passed": true,
+    "total_issues": 0,
+    "total_warnings": 6,
+    "all_issues": [],
+    "all_warnings": [
+      {
+        "category": "structure",
+        "severity": "warning",
+        "message": "文件 variables.tf（路径: aws_to_alicloud/terraform-alicloud-ess-autoscaling/variables.tf）行数 (340) 超过建议行数（建议: 300 行），建议考虑拆分文件",
+        "score_impact": "negative"
+      },
+      {
+        "category": "variables",
+        "severity": "warning",
+        "message": "变量 key_name 可能包含敏感信息但未标记为 sensitive",
+        "score_impact": "negative"
+      },
+      {
+        "category": "variables",
+        "severity": "warning",
+        "message": "变量 password_inherit 可能包含敏感信息但未标记为 sensitive",
+        "score_impact": "negative"
+      },
+      {
+        "category": "variables",
+        "severity": "warning",
+        "message": "变量数量 (47) 与资源数量 (6) 的比例 (7.83) 过大（超过 7.5），建议对相关变量进行聚合以减少变量数量",
+        "score_impact": "negative"
+      },
+      {
+        "category": "examples",
+        "severity": "warning",
+        "message": "示例 advanced plan 失败: \u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"instance_type\": conflicts with instance_types\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[0m  with module.ess_autoscaling.alicloud_ess_scaling_configuration.this[0],\n\u001b[31m│\u001b[0m \u001b[0m  on ../../main.tf line 40, in resource \"alicloud_ess_scaling_configuration\" \"this\":\n\u001b[31m│\u001b[0m \u001b[0m  40: resource \"alicloud_ess_scaling_configuration\" \"this\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m╵\u001b[0m\u001b[0m\n\u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"inst",
+        "score_impact": "negative"
+      },
+      {
+        "category": "examples",
+        "severity": "warning",
+        "message": "示例 basic plan 失败: \u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"instance_types\": conflicts with instance_type\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[0m  with module.ess_autoscaling.alicloud_ess_scaling_configuration.this[0],\n\u001b[31m│\u001b[0m \u001b[0m  on ../../main.tf line 40, in resource \"alicloud_ess_scaling_configuration\" \"this\":\n\u001b[31m│\u001b[0m \u001b[0m  40: resource \"alicloud_ess_scaling_configuration\" \"this\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m╵\u001b[0m\u001b[0m\n\u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"inst",
+        "score_impact": "negative"
+      }
+    ],
+    "details": {
+      "structure": {
+        "score": 100,
+        "valid": true,
+        "issues_count": 0,
+        "warnings_count": 1,
+        "issues": [],
+        "warnings": [
+          "文件 variables.tf（路径: aws_to_alicloud/terraform-alicloud-ess-autoscaling/variables.tf）行数 (340) 超过建议行数（建议: 300 行），建议考虑拆分文件"
+        ]
+      },
+      "variables": {
+        "score": 100,
+        "valid": true,
+        "issues_count": 0,
+        "warnings_count": 3,
+        "issues": [],
+        "warnings": [
+          "变量 key_name 可能包含敏感信息但未标记为 sensitive",
+          "变量 password_inherit 可能包含敏感信息但未标记为 sensitive",
+          "变量数量 (47) 与资源数量 (6) 的比例 (7.83) 过大（超过 7.5），建议对相关变量进行聚合以减少变量数量"
+        ]
+      },
+      "outputs": {
+        "score": 100,
+        "valid": true,
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": []
+      },
+      "documentation": {
+        "score": 100,
+        "valid": true,
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": []
+      },
+      "versions": {
+        "score": 100,
+        "valid": true,
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": []
+      },
+      "main_resources": {
+        "score": 100,
+        "valid": true,
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": []
+      },
+      "examples": {
+        "score": 70,
+        "valid": true,
+        "issues_count": 0,
+        "warnings_count": 2,
+        "issues": [],
+        "warnings": [
+          "示例 advanced plan 失败: \u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"instance_type\": conflicts with instance_types\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[0m  with module.ess_autoscaling.alicloud_ess_scaling_configuration.this[0],\n\u001b[31m│\u001b[0m \u001b[0m  on ../../main.tf line 40, in resource \"alicloud_ess_scaling_configuration\" \"this\":\n\u001b[31m│\u001b[0m \u001b[0m  40: resource \"alicloud_ess_scaling_configuration\" \"this\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m╵\u001b[0m\u001b[0m\n\u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"inst",
+          "示例 basic plan 失败: \u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"instance_types\": conflicts with instance_type\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[0m  with module.ess_autoscaling.alicloud_ess_scaling_configuration.this[0],\n\u001b[31m│\u001b[0m \u001b[0m  on ../../main.tf line 40, in resource \"alicloud_ess_scaling_configuration\" \"this\":\n\u001b[31m│\u001b[0m \u001b[0m  40: resource \"alicloud_ess_scaling_configuration\" \"this\" \u001b[4m{\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\n\u001b[31m╵\u001b[0m\u001b[0m\n\u001b[31m╷\u001b[0m\u001b[0m\n\u001b[31m│\u001b[0m \u001b[0m\u001b[1m\u001b[31mError: \u001b[0m\u001b[0m\u001b[1m\"inst"
+        ]
+      }
+    }
+  },
+  "overall_score": 97.0,
+  "module_stats": {
+    "file_count": 4,
+    "variable_count": 47,
+    "output_count": 13,
+    "resource_count": 6
+  },
+  "scoring_breakdown": {
+    "structure": {
+      "base_score": 100,
+      "max_score": 100,
+      "current_score": 100,
+      "deductions": [
+        {
+          "item": "文件 variables.tf",
+          "points": -5
+        }
+      ],
+      "bonuses": [
+        {
+          "item": "职责清晰",
+          "points": 0
+        },
+        {
+          "item": "多个示例（2个）",
+          "points": 5
+        }
+      ]
+    }
+  }
+}
+
+✅ 评估通过 (得分: 97.0)
