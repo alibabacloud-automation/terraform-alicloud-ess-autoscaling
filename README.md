@@ -4,7 +4,7 @@ Alibaba Cloud Elastic Scaling Service (ESS) Auto Scaling Terraform Module
 
 English | [简体中文](https://github.com/alibabacloud-automation/terraform-alicloud-ess-autoscaling/blob/main/README-CN.md)
 
-Terraform module which creates [Elastic Scaling Service (ESS)](https://www.alibabacloud.com/help/en/auto-scaling) resources on Alibaba Cloud, providing auto-scaling capabilities for ECS instances. This module manages the full lifecycle of ESS resources including scaling groups, scaling configurations, scaling rules, scheduled tasks, notifications, and lifecycle hooks.
+Terraform module which creates [Elastic Scaling Service (ESS) resources](https://www.alibabacloud.com/help/en/auto-scaling) on Alibaba Cloud. This module manages the full lifecycle of ESS resources including scaling groups, scaling configurations, scaling rules, scheduled tasks, notifications, and lifecycle hooks.
 
 ## Usage
 
@@ -20,15 +20,9 @@ module "ess_autoscaling" {
   desired_capacity   = 3
   vswitch_ids        = ["vsw-abc123", "vsw-def456"]
 
-  image_id             = "ubuntu_20_04_x64_20G_alibase"
-  instance_type        = "ecs.g6.large"
-  security_group_ids   = ["sg-abc123"]
-  system_disk_category = "cloud_essd"
-  system_disk_size     = 40
-
-  tags = {
-    Environment = "production"
-  }
+  image_id           = "ubuntu_20_04_x64_20G_alibase"
+  instance_type      = "ecs.g6.large"
+  security_group_ids = ["sg-abc123"]
 }
 ```
 
@@ -49,7 +43,7 @@ module "ess_autoscaling" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | 1.272.1 |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.141.0 |
 
 ## Modules
 

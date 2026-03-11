@@ -4,7 +4,7 @@
 
 [English](https://github.com/alibabacloud-automation/terraform-alicloud-ess-autoscaling/blob/main/README.md) | 简体中文
 
-用于在阿里云上创建[弹性伸缩服务（ESS）](https://help.aliyun.com/zh/ess/)资源的 Terraform 模块，为 ECS 实例提供自动伸缩能力。本模块管理 ESS 资源的完整生命周期，包括伸缩组、伸缩配置、伸缩规则、定时任务、通知和生命周期挂钩。
+用于在阿里云上创建[弹性伸缩服务（ESS）资源](https://help.aliyun.com/zh/ess/)的 Terraform 模块。本模块管理 ESS 资源的完整生命周期，包括伸缩组、伸缩配置、伸缩规则、定时任务、通知和生命周期挂钩。
 
 ## 使用方法
 
@@ -20,15 +20,9 @@ module "ess_autoscaling" {
   desired_capacity   = 3
   vswitch_ids        = ["vsw-abc123", "vsw-def456"]
 
-  image_id             = "ubuntu_20_04_x64_20G_alibase"
-  instance_type        = "ecs.g6.large"
-  security_group_ids   = ["sg-abc123"]
-  system_disk_category = "cloud_essd"
-  system_disk_size     = 40
-
-  tags = {
-    Environment = "production"
-  }
+  image_id           = "ubuntu_20_04_x64_20G_alibase"
+  instance_type      = "ecs.g6.large"
+  security_group_ids = ["sg-abc123"]
 }
 ```
 
@@ -49,7 +43,7 @@ module "ess_autoscaling" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | 1.272.1 |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.141.0 |
 
 ## Modules
 
